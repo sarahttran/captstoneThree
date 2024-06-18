@@ -90,3 +90,10 @@
   font-family: 'Times New Roman';
   color: #637293;
 }
+
+.App-login {
+  height: 0px;
+  right: 20px;
+  position: absolute;
+  font-family: 'Times New Roman';
+}

@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Button
 import Button from 'react-bootstrap/Button'; 
 // Navbar
 import 'bootstrap/dist/css/bootstrap.min.css';
 import BasicExample from './components/Navbar';
-//Pages
-//import About from './components/About';
+
 
 function App() {
   return (
@@ -17,10 +17,11 @@ function App() {
     <h1 className = "Home-faceText2">Rome, Papal States</h1>
     <h1 className = "Home-faceText3">Italian Baroque Painter</h1>
     <div className = "Home-learnMore">
-      <Button variant="outline-danger" size="sm" class = "btn btn-outline-danger">LEARN MORE</Button>
+      <Link to="/About">
+        <Button variant="outline-danger" size="sm" class = "btn btn-outline-danger">LEARN MORE</Button>
+      </Link>
     </div>
-    <div className = "App-navbar"><BasicExample/>
-    </div>
+    <div className = "App-navbar"><BasicExample/></div>
     </>
   );
 }

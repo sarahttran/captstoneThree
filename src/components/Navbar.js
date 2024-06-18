@@ -2,6 +2,8 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+// Login
+import { useState } from 'react';
 
 function BasicExample() {
   return (
@@ -9,6 +11,9 @@ function BasicExample() {
       <Container>
         <div NavbarName>
         <Navbar.Brand className = "App-navbarHeader" href="#home">ARTEMISIA GENTILESCHI</Navbar.Brand>
+        </div>
+        <div className = "App-login">
+          <LoginButton/>
         </div>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -27,5 +32,23 @@ function BasicExample() {
     </Navbar>
   );
 }
+
+  const LoginButton = () => {
+    const [user, setUser] = useState(false);
+  
+    const login = () => {
+      setUser(true);
+    };
+  
+    const logout = () => {
+      setUser(false);
+    };
+  
+      return (
+        <button variant="outline-light" size="sm" class = "btn btn-outline-light" onClick={user ? logout : login}>
+          {user ? 'LOGOUT' : 'LOGIN'}
+        </button>
+      )
+    }
 
 export default BasicExample;
