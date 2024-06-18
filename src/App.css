@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  background-color: #f9fbfe;
 }
 
 .App-logo {
@@ -35,4 +36,57 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.App-navbar {
+  background-color: #637293;
+  height:100px
+}
+
+.App-navbarHeader {
+  font-family: 'Times New Roman';
+}
+
+.Home-learnMore {
+  height: 0px;
+  width: 150px;
+  position: absolute;
+  top: 630px;
+  right: 350px;
+  font-family: 'Times New Roman';
+}
+
+.Home-face{
+  height: 650px;
+  width: 500px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+}
+
+.Home-faceText{
+  position: absolute;
+  top: 500px;
+  right: 120px;
+  font-size: 3vw;
+  font-family: 'Times New Roman';
+  color: #637293;
+}
+
+.Home-faceText2{
+  position: absolute;
+  top: 460px;
+  right: 355px;
+  font-size: 1.5vw;
+  font-family: 'Times New Roman';
+  color: #637293;
+}
+
+.Home-faceText3{
+  position: absolute;
+  top: 570px;
+  right: 320px;
+  font-size: 1.75vw;
+  font-family: 'Times New Roman';
+  color: #637293;
 }
